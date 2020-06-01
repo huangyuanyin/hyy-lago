@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			body{background: #f8f9fc;}
+			*{margin:0;padding:0;}
+			p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+			li{list-style:none;}
+			a{text-decoration:none;color:#000;}
+			img{display:block;}
+			input{border: none;}
+			.fl{float:left;}
+			.fr{float:right;}
+			.clearFixed:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			.btnRed:after{
+				content:"";
+				display:block;
+				position: absolute;
+				left:50%;
+				bottom:-2px;
+				margin-left:-10px;
+				border:10px solid transparent;
+				border-bottom-color:#fff;
+			}
+			.btnWhit:before{
+				content:"";
+				display:block;
+				position: absolute;
+				left:50%;
+				bottom:0px;
+				margin-left:-10px;
+				border:10px solid transparent;
+				border-bottom-color:#00b38a;
+			}
+			
+			.header{
+				height:360px;
+				background: #00b38a;
+			}
+			.boxCon{
+				position:absolute;
+				top:77px;
+				left:50%;
+				margin-left:-325px;
+				width:700px;
+				height:490px;
+				
+			}
+			.boxCon .logo{
+				height:77px;
+				background:url("img2/logo.png")no-repeat;
+			}
+			.boxCon .forBox{
+				height:400px;
+				border:1px solid #dce1e6;
+				padding:6px;
+				background: #fff;
+			}
+			.boxCon .forBox .imgBox img{
+				margin-right:6px;
+			}
+			.boxCon .forBox .imgBox img:nth-child(2){
+				margin-top:-5px;
+			}
+			.boxCon .forBox .inpLeft{
+				position: relative;
+				width:290px;
+				height:277px;
+				padding:0px 63px;
+				border-right:1px dashed #555;
+			}
+			.boxCon .forBox .inpLeft .or{
+				position: absolute;
+				width:18px;
+				height: 18px;
+				right:-8px;
+				top:50%;
+				margin-top:-9px;
+				background:#fff;
+				text-align: center;
+				color:#555;
+			}
+			.boxCon .forBox .inpLeft .line1{
+				height:40px;
+				border-bottom: 1px solid #555;
+				font-size:18px;
+				color:#555;
+				line-height: 40px;
+			}
+			.boxCon .forBox .inpLeft .line1 p{
+				width:145px;
+				text-align:center;
+				position: relative;
+			}
+			.boxCon .forBox .inpLeft .line1 p:nth-child(1){
+				color:#00B38A;
+				border-bottom:1px solid #00b38a;
+			}
+			.boxCon .forBox .inpLeft .lineInp{
+				height:64px;
+				border-bottom:1px solid #555;
+			}
+			.boxCon .forBox .inpLeft .lineInp input{
+				width:100%;
+				height:44px;
+				padding-top:20px;
+			}
+			.boxCon .forBox .inpLeft .txt{
+				color:#00B38A;
+				height:58px;
+				line-height:58px;
+				font-size: 12px;
+				text-align: right;
+			}
+			.boxCon .forBox .inpLeft input[type="submit"]{
+				height:48px;
+				width: 100%;
+				background: #00B38A;
+				color:#fff;
+				text-align:center;
+				line-height: 48px;
+				font-size: 18px;
+			}
+			
+			.boxCon .forBox .inpRight{
+				padding-left:52px;
+				color:#555;
+				font-size: 14px;
+				padding-top:80px;
+			}
+			.boxCon .forBox .inpRight .txt2{
+				font-size: 16px;
+				color:#00b38a;
+				margin-bottom:44px;
+				height:30px;
+				line-height: 30px;
+			}
+			.boxCon .forBox .inpRight .txt2 img{
+				display:inline-block;
+				margin-left:3px;
+				vertical-align: middle;
+			}
+			.boxCon .forBox .inpRight .txt3 img{
+				margin-right:24px;
+				margin-top:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="boxCon">
+			<div class="logo"></div>
+			<form action="#" method="get">
+				<div class="forBox">
+					<div class="imgBox clearFixed">
+						<img class="fl" src="img2/qrcode-normal.svg" alt="" />
+						<img class="fl" src="img2/wx-login.svg" alt="" />
+					</div>
+					<div class="inpLeft fl">
+						<div class="line1">
+							<p class="txtP1 fl btnRed btnWhit">密码登录</p>
+							<p class="txtP2 fl">验证码登录</p>
+						</div>
+						<div class="lineInp">
+							<input type="text" placeholder="请输入常用手机号或邮箱" />
+						</div>
+						<div class="lineInp">
+							<input type="password" placeholder="请输入密码" />
+						</div>
+						<p class="txt">忘记密码?</p>
+						<input type="submit" value="登录" />
+						<span class="or">or</span>
+					</div>
+					<div class="inpRight fl">
+						<div class="txt1">还没有账号</div>
+						<div class="txt2">立即注册<img src="img2/icon-arrow-right.png" alt="" /></div>
+						<div class="txt3">
+							<p>使用一下站好直接登录</p>
+							<img class="fl" src="img2/icon-sina1.png" alt="" />
+							<img class="fl" src="img2/icon-wechat.png" alt="" />
+							<img class="fl" src="img2/icon-tencent.png" alt="" />
+							<img class="fl" src="img2/icon-baidu.png" alt="" />
+						</div>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>
